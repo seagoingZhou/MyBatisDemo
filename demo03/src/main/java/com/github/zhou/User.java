@@ -1,5 +1,8 @@
-package com.github.yeecode.mybatisdemo;
+package com.github.zhou;
 
+import lombok.ToString;
+
+@ToString
 public class User {
     private Integer id;
     private String name;

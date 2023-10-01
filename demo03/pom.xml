@@ -8,10 +8,10 @@
 		<version>2.1.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github.yeecode.mybatisdemo</groupId>
-	<artifactId>demo</artifactId>
+	<groupId>com.github.zhou</groupId>
+	<artifactId>demo03</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>demo03</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -32,6 +32,11 @@
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>3.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.8</version>
 		</dependency>
 	</dependencies>
 
