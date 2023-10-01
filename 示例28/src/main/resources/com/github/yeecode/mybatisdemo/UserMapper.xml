@@ -3,11 +3,11 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.github.yeecode.mybatisdemo.dao.UserMapper">
-    <select id="queryUserBySchoolName" resultType="com.github.yeecode.mybatisdemo.model.User">
+    <select id="queryUserBySchoolName" resultType="User">
     SELECT * FROM `user` WHERE schoolName = #{schoolName}
     </select>
 
-    <insert id="addUser" parameterType="com.github.yeecode.mybatisdemo.model.User">
+    <insert id="addUser" parameterType="User">
         INSERT INTO `user`
         (`name`,`email`,`age`,`sex`,`schoolName`)
         VALUES

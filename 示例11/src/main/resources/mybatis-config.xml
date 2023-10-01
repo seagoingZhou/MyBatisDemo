@@ -19,7 +19,7 @@
         <setting name="defaultStatementTimeout" value="25000"/>
     </settings>
     <typeAliases>
-        <typeAlias type="com.github.yeecode.mybatisdemo.model.User" alias="user"/>
+        <typeAlias type="User" alias="user"/>
         <package name="com.github.yeecode.mybatisdemo.model"/>
     </typeAliases>
     <typeHandlers>

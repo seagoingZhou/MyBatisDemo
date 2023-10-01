@@ -4,12 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.github.yeecode.mybatisdemo.dao.UserMapper">
     <!--直接字符串拼接，必须自己加引号，否则会拼接为下面的语句然后失败：：SELECT * FROM `user` WHERE schoolName = Sunny School-->
-    <select id="queryUserBySchoolName_A" resultType="com.github.yeecode.mybatisdemo.model.User" statementType="STATEMENT">
+    <select id="queryUserBySchoolName_A" resultType="User" statementType="STATEMENT">
       SELECT * FROM `user` WHERE schoolName = "${schoolName}"
     </select>
 
     <!--会把变量转为？后进行填入，不能有引号-->
-    <select id="queryUserBySchoolName_B" resultType="com.github.yeecode.mybatisdemo.model.User" statementType="PREPARED">
+    <select id="queryUserBySchoolName_B" resultType="User" statementType="PREPARED">
       SELECT * FROM `user` WHERE schoolName = #{schoolName}
     </select>
 
